@@ -41,7 +41,7 @@ func NewMapper(opt Option) *Mapper {
 // Map maps the lua table to the given struct pointer.
 func (mapper *Mapper) Map(tbl *lua.LTable, st interface{}) error {
 	opt := mapper.Option
-	mp, ok := ToGoValue(tbl, opt).(map[interface{}]interface{})
+	mp, ok := ToGoValue(tbl, opt).(map[string]interface{})
 	if !ok {
 		return errors.New("arguments #1 must be a table, but got an array")
 	}
