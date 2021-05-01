@@ -79,7 +79,7 @@ func TestTypes(t *testing.T) {
 	}
 	var stct testStruct
 
-	if err := NewMapper(Option{NameFunc: Id}).Map(L.GetGlobal("tbl").(*lua.LTable), &stct); err != nil {
+	if err := NewMapper(Option{NameFunc: ID}).Map(L.GetGlobal("tbl").(*lua.LTable), &stct); err != nil {
 		t.Error(err)
 	}
 	errorIfNotEqual(t, nil, stct.Nil)
@@ -108,7 +108,7 @@ func TestNameFunc(t *testing.T) {
 		t.Error(err)
 	}
 	var person testPerson
-	mapper := NewMapper(Option{NameFunc: Id})
+	mapper := NewMapper(Option{NameFunc: ID})
 	if err := mapper.Map(L.GetGlobal("person").(*lua.LTable), &person); err != nil {
 		t.Error(err)
 	}
