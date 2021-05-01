@@ -4,17 +4,11 @@
 
 Maps a GopherLua table to a Go struct. This is a fork of [yuin/gluamapper](https://github.com/yuin/gluamapper).
 
-[![image](https://godoc.org/github.com/xyproto/gluamapper?status.svg)](http://godoc.org/github.com/xyproto/gluamapper)
+gluamapper converts a GopherLua table to `map[string]interface{}`, and then converts it to a Go struct using [mitchellh/mapstructure](https://github.com/mitchellh/mapstructure/).
 
-[![image](https://travis-ci.org/xyproto/gluamapper.svg)](https://travis-ci.org/xyproto/gluamapper)
+## Installation of the development version
 
-gluamapper provides an easy way to map GopherLua tables to Go structs.
-
-gluamapper converts a GopherLua table to `map[string]interface{}`, and then converts it to a Go struct using [mapstructure](https://github.com/mitchellh/mapstructure/).
-
-## Installation
-
-    go get github.com/xyproto/gluamapper
+    go get -u github.com/xyproto/gluamapper
 
 ## API
 
