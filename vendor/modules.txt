@@ -1,0 +1,9 @@
+# github.com/mitchellh/mapstructure v1.4.1
+## explicit
+github.com/mitchellh/mapstructure
+# github.com/xyproto/gopher-lua v0.0.0-20190220202711-e72dfa319174
+## explicit
+github.com/xyproto/gopher-lua
+github.com/xyproto/gopher-lua/ast
+github.com/xyproto/gopher-lua/parse
+github.com/xyproto/gopher-lua/pm
